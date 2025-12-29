@@ -377,8 +377,15 @@
         23 https://docs.aws.amazon.com/cli/latest/reference/ec2/create-security-group.html
         24 https://docs.aws.amazon.com/cli/latest/reference/ec2/authorize-security-group-ingress.html
 
-    
+
+29th Dec 2025
+=============
+
     -> Infrastructure As Code (IaC)
 
         -> Infrastructure as code is the process of managing and provisioning computer data centers 
             through machine-readable definition files [CODE].
+
+        -> Cloud Formation Template 
+
+            -> https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html 
