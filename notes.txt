@@ -471,3 +471,15 @@
         -> Simple Storage Service (S3) - Used for internet storage i.e static assets 
             i.e images, videos, documents etc (huge in size), so we need low cost storage i.e S3 
             we cannot use for (OS(ubuntu), Softwares(nginx))
+
+31st Dec 2025
+=============
+
+    -> Elastic Block Store (EBS) - Used for Server Storage (OS(ubuntu), Softwares(nginx))
+            -> It cannot be shared across multiple zones i.e multiple data centers
+
+    -> EBS Must have an Root Volume (OS Disk i.e Primary Disk)
+
+    -> EBS Optionally can have an Additional Volumes (Secondary Disk)
+
+    -> Based On the Zone, Volume will be created in the same zone where instance is launched
