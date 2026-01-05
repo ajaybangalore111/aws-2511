@@ -562,3 +562,49 @@
         -> S3 Static Web hosting
             
             -> You can use Amazon S3 to host a static website.
+
+
+5th Jan 2025
+=============
+
+    -> Database Storage 
+
+    -> Before Databases we need to know concepts of Security 
+
+    -> Database Often Hold Sensitive Information
+
+    -> In terms of AWS Security 
+
+        -> Identity Level - IAM Service 
+
+        -> Datacenter Level - Advance Networking concepts
+
+    -> AWS IAM 
+
+        -> AWS Identity and Access Management (IAM) is a web service that helps you 
+            "securely control access" to AWS resources.
+
+        -> IAM Users 
+        -> IAM Groups 
+        -> IAM Policies
+        -> IAM Roles 
+
+        -> IAM Users 
+
+            -> Root User: The user created when you first create your AWS account 
+                is called the "root" user -> your_name@mail.com -> registered with aws account 
+                root user has FULL rights i.e no Restrictions 
+
+            -> IAM User: represents an AWS user that you may create (in IAM), 
+                who will have "varying degrees of access"(read/write) to the AWS account.
+                By default IAM users will not have any permissions.
+                IAM Users can access aws resources using 
+
+                    -> AWS Management Console: Human Based with Browser Login - username & password 
+
+                    -> AWS Programmatic Access: Softwares & Tools Based Login - access & secret key  
+
+            -> IAM Policy
+
+                -> A policy is an object in AWS that defines permissions. 
+
