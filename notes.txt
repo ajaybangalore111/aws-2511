@@ -608,3 +608,13 @@
 
                 -> A policy is an object in AWS that defines permissions. 
 
+
+6th Jan 2025
+=============
+
+    -> Custom Policy: A policy created by user based on custom requirements 
+
+    -> IAM Group: It's an logical collection of IAM Users, used for organizing 
+            permissions in easy way.
+
+    
