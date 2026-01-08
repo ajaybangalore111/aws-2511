@@ -646,3 +646,15 @@
 
             -> A bastion host acts as a "portal" to access EC2 instances 
             that are located in a private subnet.
+
+8th Jan 2025
+=============
+
+    -> NAT Gateway 
+
+        -> NAT Gateway allows resources in a private subnet to access the internet for
+        (system updates, external database connections, wget calls, OS patch, etc).
+
+        -> https://i.sstatic.net/2ihm3.png
+
+        
