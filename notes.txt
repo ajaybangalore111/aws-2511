@@ -657,4 +657,58 @@
 
         -> https://i.sstatic.net/2ihm3.png
 
+9th Jan 2025
+=============
+
+    -> Database Storage - IAAS - You are responsible 
+
+        -> Preparing VPC 
+        -> Preparing Private Subnets 
+        -> Preparing Bastion Host 
+        -> Preparing NAT Gateway 
+
+        -> Setup EC2 Database Server 
+        -> Install OS 
+        -> Update OS + Patches 
+        -> Download Database Software - MySQL  
+        -> Update Database Software - MySQL  
+        -> Backup Database 
+
+        -> NOTE: Once Database Server is setup, then Developer will use 
+            Database connection details in Application
+
+                -> Database connection details
+
+                    -> Address Of Database 
+                    -> Port Of Database
+                    -> Username Of Database
+                    -> Password Of Database
+
+
+    -> Database Storage - PAAS - AWS is responsible for all infra activities 
+            from Preparing VPC to Backup Database 
+
+        -> You are responsible for connecting Database with Application
+
+                -> Database connection details
+
+                    -> Address Of Database 
+                    -> Port Of Database
+                    -> Username Of Database
+                    -> Password Of Database
+
+    -> RDS 
+
+        -> Managed Relational Database Service
+
+            -> Earlier Server As a Service (EC2)
+            -> Earlier Storage As a Service (S3)
+            -> Now Database As a Service (RDS)
+
+        -> Database connection details
+
+            -> Address Of Database: my-app.cxwgqscew38a.us-east-2.rds.amazonaws.com 
+            -> Port Of Database: 3306
+            -> Username Of Database: admin
+            -> Password Of Database: **************
         
