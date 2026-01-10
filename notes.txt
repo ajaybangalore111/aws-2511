@@ -712,3 +712,125 @@
             -> Username Of Database: admin
             -> Password Of Database: **************
         
+10th Jan 2025
+=============
+
+    -> PAAS - MySQL Database (RDS)
+
+    -> IAAS - Tomcat Server (EC2)
+
+        -> Tomcat Setup 
+
+            -> sudo ss -ntpl
+
+            -> java 
+
+            -> sudo apt update -y 
+            
+            -> sudo apt install openjdk-11* -y
+
+            -> java 
+
+            -> ls
+            
+            -> wget https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz
+
+            -> tar xf apache-tomcat-7.0.94.tar.gz
+
+            -> ls 
+
+            -> sudo ss -ntpl
+
+            -> ~/apache-tomcat-7.0.94/bin/startup.sh 
+
+            -> sudo ss -ntpl
+
+            -> Browse Public-IP:8080 
+
+            -> Browse Public-IP:8080/LoginWebApp 
+
+        
+        -> Setup Application On Tomcat & Connect With Database 
+
+            -> ls 
+            
+            ->  git clone -b aws https://github.com/ravi2krishna/aws-rds-java.git 	
+
+            -> ls 
+
+            -> Update DB Security Group with Java-App-Server Private IP 
+
+            -> Install MySQL Client On Java-App-Server (for establishing connection)
+
+                -> mysql
+
+                -> sudo apt install mysql-client-core-8.0 -y
+
+                -> mysql
+
+                -> mysql -h rds-end-point -u username -p 
+
+                -> mysql -h my-app.cxwgqscew38a.us-east-2.rds.amazonaws.com -u admin -p 
+
+                -> SHOW DATABASES;
+
+                -> CREATE DATABASE jwt;
+
+                -> SHOW DATABASES;
+
+                -> USE jwt; 
+
+                -> SHOW TABLES;
+
+                CREATE TABLE `USER` (
+                `id` int(10) unsigned NOT NULL auto_increment,
+                `first_name` varchar(45) NOT NULL,
+                `last_name` varchar(45) NOT NULL,
+                `email` varchar(45) NOT NULL,
+                `username` varchar(45) NOT NULL,
+                `password` varchar(45) NOT NULL,
+                `regdate` date NOT NULL,
+                PRIMARY KEY (`id`)
+                ) ENGINE = InnoDB DEFAULT CHARSET = latin1;	   
+
+                -> SHOW TABLES;
+
+                -> DESC USER;
+
+                -> SELECT * FROM USER;
+
+            -> Open a new session for Application Code Changes 
+
+                -> cd aws-rds-java
+
+                -> vi src/main/webapp/userRegistration.jsp
+                    
+                    Change database address & credentials
+
+                -> vi src/main/webapp/login.jsp
+
+                    Change database address & credentials
+
+                -> Build Application 
+
+                    -> mvn package 
+
+                    -> sudo apt install maven -y
+
+                    -> ls target 
+
+                    -> mvn package
+
+                    -> ls target 
+
+                -> Deploy Application On Tomcat 
+
+                    -> Browse Public-IP:8080/LoginWebApp 
+
+                    -> cp ~/aws-rds-java/target/LoginWebApp.war ~/apache-tomcat-7.0.94/webapps/
+
+                    -> Browse Public-IP:8080/LoginWebApp 
+
+                
+
+
