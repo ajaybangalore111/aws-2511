@@ -832,5 +832,36 @@
                     -> Browse Public-IP:8080/LoginWebApp 
 
                 
+12th Jan 2025
+=============
+
+    -> PAAS - MySQL Database (RDS)
+
+    -> PAAS - Tomcat Server (Elastic Beanstalk)
+
+    -> SAAS - Completely vendor will take care 
+
+        -> Say i need monitoring solution 
+
+            -> We need to manually setup in IAAS 
+
+                -> https://assets.nagios.com/training/selfpaced/materials/Nagios_StartUp_Guide.pdf
+
+            -> Cloudwatch - Monitoring As Service
+
+                -> Monitor your Server for Metrics (CPU)
+
+                    -> If cpu of server is beyond 90%, send an email 
+
+            -> SimpleNotificationService(SNS) - Feedback As Service
+
+                -> If cpu of server is beyond 90%, then SNS will send email 
+
+    -> Login To Server 
+
+        -> sudo apt update -y && sudo apt install stress -y
+
+        -> stress --cpu 1 --timeout 10000 &
+
 
 
